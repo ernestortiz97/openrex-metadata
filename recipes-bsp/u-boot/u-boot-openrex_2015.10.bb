@@ -24,7 +24,7 @@ PV = "v2015.10+git${SRCPV}"
 
 SRCBRANCH ??= "jethro"
 
-SRC_URI = "git://https://github.com/ernestortiz97/openrex-uboot.git;branch=${SRCBRANCH}"
+SRC_URI = "git://github.com/ernestortiz97/openrex-uboot.git;branch=${SRCBRANCH}"
 
 #SRCREV is the commit number, must be changed for a new version
 SRCREV = "f8109e916a1f4dd12bd57c22c8aa2f3447884268"
