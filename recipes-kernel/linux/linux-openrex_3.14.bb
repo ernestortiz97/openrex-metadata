@@ -13,7 +13,7 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "jethro"
 LOCALVERSION = "-fslc"
 
-SRCREV = "bfbdad4309a7a125788f2603302df369c2e4dd9c"
+SRCREV = "5afeeb2764a1327a1f65603e594985f0bbc9e32d"
 
 SRC_URI = "git://github.com/ernestortiz97/openrex-linux.git;branch=${SRCBRANCH} \
            file://defconfig"
@@ -23,4 +23,4 @@ SRC_URI = "git://github.com/ernestortiz97/openrex-linux.git;branch=${SRCBRANCH} 
 PV .= ""
 
 
-COMPATIBLE_MACHINE = "(mx6|mx7)"
+COMPATIBLE_MACHINE = "(mx6|mx7|imx6q-openrex|imx6s-openrex)"
