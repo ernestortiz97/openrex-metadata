@@ -26,31 +26,17 @@ In case you would like to know more about YOCTO & How To Use It, for example how
  
 Copy and paste this into your Linux host machine 
  
-<<<<<<< HEAD
     cat > .repo/local_manifests/imx6openrex.xml << EOF
     <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
      
-      <remote fetch="git://github.com/ernestortiz97" name="ernestortiz97"/>
+      <remote fetch="git://github.com/FEDEVEL" name="fedevel"/>
      
-      <project remote="ernestortiz97" revision="jethro" name="openrex-metadata" path="sources/meta-openrex">
+      <project remote="fedevel" revision="jethro" name="meta-openrex" path="sources/meta-openrex">
         <copyfile src="openrex-setup.sh" dest="openrex-setup.sh"/>
       </project>
     </manifest>
     EOF
-=======
-	cat > .repo/local_manifests/imx6openrex.xml << EOF
-	<?xml version="1.0" encoding="UTF-8"?>
-	<manifest>
-	 
-	  <remote fetch="git://github.com/ernestortiz97" name="ernestortiz97"/>
-	 
-	  <project remote="ernestortiz97" revision="jethro" name="openrex-metadata" path="sources/meta-openrex">
-	    <copyfile src="openrex-setup.sh" dest="openrex-setup.sh"/>
-	  </project>
-	</manifest>
-	EOF
->>>>>>> f40532b725e046037689511bad5a0c533b65c0b0
  
 ### 4) Sync repositories
     repo sync
@@ -66,8 +52,7 @@ Here is a list of 'machine names' which you can use to build OpenRex images. Use
  
  
     imx6q-openrex
-    imx6s-openrex
-
+     
 ### Setup and Build Console image
     MACHINE=<machine name> source setup-environment build-openrex
     MACHINE=<machine name> bitbake core-image-base
