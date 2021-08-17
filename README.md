@@ -25,8 +25,7 @@ In case you would like to know more about YOCTO & How To Use It, for example how
     mkdir -pv .repo/local_manifests/
  
 Copy and paste this into your Linux host machine 
- 
-<<<<<<< HEAD
+
     cat > .repo/local_manifests/imx6openrex.xml << EOF
     <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
@@ -38,19 +37,6 @@ Copy and paste this into your Linux host machine
       </project>
     </manifest>
     EOF
-=======
-	cat > .repo/local_manifests/imx6openrex.xml << EOF
-	<?xml version="1.0" encoding="UTF-8"?>
-	<manifest>
-	 
-	  <remote fetch="git://github.com/ernestortiz97" name="ernestortiz97"/>
-	 
-	  <project remote="ernestortiz97" revision="jethro" name="openrex-metadata" path="sources/meta-openrex">
-	    <copyfile src="openrex-setup.sh" dest="openrex-setup.sh"/>
-	  </project>
-	</manifest>
-	EOF
->>>>>>> f40532b725e046037689511bad5a0c533b65c0b0
  
 ### 4) Sync repositories
     repo sync
